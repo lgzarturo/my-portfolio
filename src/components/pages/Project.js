@@ -28,10 +28,14 @@ function Project ({ username }) {
 
   return (
     <div className="project-container">
-      <h2>Proyecto: {project.name}</h2>
+      <h2 className='display-4 mt-5 mb-3'>Proyecto: {project.name}</h2>
       {loading ?
         (<span>Loading ...</span>) :
-        (<div></div>)}
+        (<>
+          <p className="lead">
+            {project.description}
+          </p>
+        </>)}
     </div>
   )
 }

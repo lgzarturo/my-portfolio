@@ -1,4 +1,11 @@
 footer {
   border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   color: var(--bs-gray-500);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav > a {
+  color: var(--bs-gray-500) !important;
+  margin-left: 20px;
 }

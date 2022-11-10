@@ -34,7 +34,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      favicon: './assets/favicon.ico'
     }),
     new ESLintPlugin(),
   ]

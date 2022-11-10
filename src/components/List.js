@@ -18,7 +18,7 @@ function List () {
 
   return (
     <>
-      <h2 className='display-4 mt-5 mb-3'>Personajes</h2>
+      <h2 className='display-6 mt-5 mb-3'>Personajes</h2>
       <div className='row g-4 mb-5'>
         {loading ?
           (<div>Loading ... </div>) :

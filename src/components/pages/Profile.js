@@ -27,28 +27,36 @@ function Profile ({ username }) {
 
   const items = [
     {
-      field: 'html_url',
+      field: 'perfil',
       value: <Link url={profile.html_url} title={profile.html_url} />
     },
     {
-      field: 'repos_url',
+      field: 'repositorios',
       value: <Link url={profile.repos_url} title={profile.repos_url} />
     },
-    { field: 'name', value: profile.name },
-    { field: 'company', value: profile.company },
-    { field: 'location', value: profile.location },
+    { field: 'nombre', value: profile.name },
+    { field: 'compañía', value: profile.company },
+    { field: 'ubicación', value: profile.location },
     { field: 'bio', value: profile.bio }
   ]
 
   return (
     <div className="profile-container">
-      <h2>Sobre mí</h2>
+      <h2 className='display-4 mt-5 mb-3'>Sobre mí</h2>
       {loading ?
         (<span>Loading ...</span>) :
         (
-          <div>
-            <img src={profile.avatar_url} alt={profile.name} />
-            <ListProperties items={items} />
+          <div className='card my-4'>
+            <div className="row g-0">
+              <div className="col-md-2">
+                <img src={profile.avatar_url} alt={profile.name} className="img-fluid rounded-start" />
+              </div>
+              <div className="col-md-10">
+                <div className="card-body">
+                  <ListProperties items={items} />
+                </div>
+              </div>
+            </div>
           </div>
         )}
     </div>

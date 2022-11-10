@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import './Projects.css'
 import ListProperties from '../ListProperties'
+import Link from '../Link'
 
 Projects.propTypes = {
   username: PropTypes.string,
@@ -27,14 +28,14 @@ function Projects ({ username }) {
 
   return (
     <div className='projects-container'>
-      <h2>Proyectos</h2>
+      <h2 className='display-4 mt-5 mb-3'>Proyectos</h2>
       {loading ?
         (<span>Loading ...</span>) :
         (
           <div>
             <ListProperties items={projects.map((project) => ({
-              field: project.name,
-              value: <RouterLink to={project.name}>{project.html_url}</RouterLink>
+              field: <RouterLink to={project.name}>{project.name}</RouterLink>,
+              value: <Link url={project.html_url} title={project.html_url} />
             }))} />
           </div>
         )}
