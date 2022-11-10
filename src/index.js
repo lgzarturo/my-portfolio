@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import List from './components/List'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App () {
   return (
@@ -16,6 +17,7 @@ function App () {
       </nav>
       <Header />
       <List />
+      <Footer />
     </div>
   )
 }
