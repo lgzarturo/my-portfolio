@@ -11,9 +11,7 @@
         [
             "@babel/preset-react",
             {
-                "targets": {
-                    "runtime": "automatic"
-                }
+                "runtime": "automatic"
             }
         ]
     ]
