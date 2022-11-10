@@ -1,10 +1,14 @@
 function Character (character) {
   return (
-    <>
-      <h3>{character.name}</h3>
-      <img src={character.image} alt={character.name} />
-      <p>{`Origin: ${character.origin && character.origin.name}`}</p>
-    </>
+    <div className='col-3'>
+      <div className="card mb-3">
+        <img className='card-img-top' src={character.image} alt={character.name} />
+        <div className="card-body">
+          <h3 className='card-title'>{character.name}</h3>
+          <p>{`Origin: ${character.origin && character.origin.name}`}</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
