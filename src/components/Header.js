@@ -7,6 +7,7 @@ function Header () {
   return (
     <header className='app-header'>
       <img src={logo} className='app-logo' alt="logo" />
+      <h2>Mi portafolio profesional</h2>
       <Link url='https://linkedin.com/in/lgzarturo' title='LinkedIn' />
       <Link url='https://github.com/lgzarturo' title='GitHub' />
       <Link url='https://twitter.com/lgzarturo' title='Twitter' />

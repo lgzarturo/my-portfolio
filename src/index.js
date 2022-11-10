@@ -3,6 +3,7 @@ import List from './components/List'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Profile from './components/pages/Profile'
 
 function App () {
   return (
@@ -16,6 +17,7 @@ function App () {
         </span>
       </nav>
       <Header />
+      <Profile username='lgzarturo' />
       <List />
       <Footer />
     </div>
