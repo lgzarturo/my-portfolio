@@ -1,13 +1,20 @@
 import ReactDOM from 'react-dom/client'
 import List from './components/List'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from './components/Header'
 
 function App () {
   return (
     <div className='container'>
       <nav className="navbar sticky-top navbar-light bg-dark">
-        <h1 className='navbar-brand text-light px-3'>Rick and Morty</h1>
+        <span className='navbar-brand text-light px-3 h1'>
+          Arturo López
+        </span>
+        <span className='d-flex text-light px-3'>
+          Perfil profesional
+        </span>
       </nav>
+      <Header />
       <List />
     </div>
   )

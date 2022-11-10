@@ -1,0 +1,9 @@
+.app-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.app-link:hover {
+  text-decoration: underline;
+  color: #61dafb;
+}
