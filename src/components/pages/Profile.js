@@ -2,14 +2,14 @@ import PropTypes from 'prop-types'
 import { useState, useEffect } from 'react'
 import Link from '../Link'
 import './Profile.css'
-import ProfileListProperties from './ProfileListProperties'
+import ListProperties from '../ListProperties'
 
 Profile.propTypes = {
   username: PropTypes.string,
 }
 
 function Profile ({ username }) {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [profile, setProfile] = useState({})
 
   useEffect(() => {
@@ -48,7 +48,7 @@ function Profile ({ username }) {
         (
           <div>
             <img src={profile.avatar_url} alt={profile.name} />
-            <ProfileListProperties items={items} />
+            <ListProperties items={items} />
           </div>
         )}
     </div>

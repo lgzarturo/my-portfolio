@@ -3,7 +3,10 @@ import List from './components/List'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Profile from './components/pages/Profile'
+import Projects from './components/pages/Projects'
+import Project from './components/pages/Project'
 
 function App () {
   return (
@@ -16,8 +19,16 @@ function App () {
           Perfil profesional
         </span>
       </nav>
-      <Header />
-      <Profile username='lgzarturo' />
+
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Profile username='lgzarturo' />} />
+          <Route path='/projects' element={<Projects username='lgzarturo' />} />
+          <Route path='/projects/:name' element={<Project username='lgzarturo' />} />
+        </Routes>
+      </BrowserRouter>
+
       <List />
       <Footer />
     </div>

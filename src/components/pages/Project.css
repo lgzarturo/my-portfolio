@@ -1,0 +1,18 @@
+.project-container {
+  margin: 10px auto;
+}
+
+.project-container > div > ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.project-container > div > ul > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-container > div > ul > li > span {
+  font-weight: 600;
+}

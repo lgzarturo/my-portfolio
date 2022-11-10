@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 
-ProfileListProperties.propTypes = {
+ListProperties.propTypes = {
   items: PropTypes.array,
 }
 
-function ProfileListProperties ({ items }) {
+function ListProperties ({ items }) {
   return (
     <ul>
       {items.map((item) => (
@@ -17,4 +17,4 @@ function ProfileListProperties ({ items }) {
   )
 }
 
-export default ProfileListProperties
+export default ListProperties
