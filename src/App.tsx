@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom/client'
 import List from './components/List'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
@@ -8,16 +7,12 @@ import Profile from './components/pages/Profile'
 import Projects from './components/pages/Projects'
 import Project from './components/pages/Project'
 
-function App () {
+function App() {
   return (
     <div className='container'>
-      <nav className="navbar sticky-top navbar-light bg-dark">
-        <span className='navbar-brand text-light px-3 h1'>
-          Arturo López
-        </span>
-        <span className='d-flex text-light px-3'>
-          Perfil profesional
-        </span>
+      <nav className='navbar sticky-top navbar-light bg-dark'>
+        <span className='navbar-brand text-light px-3 h1'>Arturo López</span>
+        <span className='d-flex text-light px-3'>Perfil profesional</span>
       </nav>
 
       <BrowserRouter>
@@ -35,6 +30,4 @@ function App () {
   )
 }
 
-const container = document.getElementById('app')
-const root = ReactDOM.createRoot(container)
-root.render(<App />)
+export default App

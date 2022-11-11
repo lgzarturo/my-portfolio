@@ -1,35 +1,30 @@
 {
   "name": "my-portfolio",
+  "description": "Portafolio profesional de Arturo López",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arturo López",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "7.20.2",
-    "@babel/preset-env": "7.20.2",
-    "@babel/preset-react": "7.18.6",
-    "babel-loader": "9.1.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
     "bootstrap": "5.2.2",
-    "css-loader": "6.7.1",
-    "eslint": "8.27.0",
-    "eslint-plugin-react": "7.31.10",
-    "eslint-webpack-plugin": "3.2.0",
-    "html-webpack-plugin": "5.5.0",
-    "style-loader": "3.3.1",
-    "webpack": "5.75.0",
-    "webpack-cli": "4.10.0",
-    "webpack-dev-server": "4.11.1"
+    "css-loader": "6.7.1"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "6.4.3"
   }
 }

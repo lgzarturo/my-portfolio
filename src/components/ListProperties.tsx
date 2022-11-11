@@ -1,10 +1,14 @@
-import PropTypes from 'prop-types'
-
-ListProperties.propTypes = {
-  items: PropTypes.array,
+interface ListPropertiesState {
+  items: Array<Item>
 }
 
-function ListProperties ({ items }) {
+interface Item {
+  field: any
+  value: any
+}
+
+function ListProperties(props: ListPropertiesState) {
+  const { items } = props
   return (
     <ul>
       {items.map((item) => (

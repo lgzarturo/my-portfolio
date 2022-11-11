@@ -1,6 +1,24 @@
 # Portafolio profesional
 
-## Dependencias del proyecto
+## Vite
+
+El proyecto se migro a Vite y TypeScript
+
+### Dependencias
+
+```json
+"@types/react": "^18.0.24",
+"@types/react-dom": "^18.0.8",
+"@vitejs/plugin-react": "^2.2.0",
+"typescript": "^4.6.4",
+"vite": "^3.2.3",
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+```
+
+## Proyecto de react desde Cero
+
+Para generar un proyecto con React y Webpack, se pueden requieren las siguientes dependencias.
 
 ### Instalar React
 ```bash
