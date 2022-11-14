@@ -2,7 +2,7 @@
 
 ## Vite
 
-> El proyecto se migro a Vite y TypeScript
+> El proyecto se migro a Vite + React + TypeScript Setup
 
 El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com)
 
@@ -41,6 +41,55 @@ El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com)
 - `npm run dev`: Ejecutar el proyecto de forma local.
 - `npm run build`: Compilar el proyecto para generar el paquete optimizado para el despliegue.
 - `npm run preview`: El comando arrancará el servidor web estático local y se despliega de forma local el contenido de la capeta 'dist'.
+
+## Linter para Vite y TypeScript
+
+> El proyecto incluye: eslint, eslint-airbnb-config, prettier, vitest, jsdom, @testing-library y react-router.
+
+1. Instalar el Linter.
+
+```bash
+npm install --save-dev --save-exact eslint
+```
+
+2. Configurar eslint `npx eslint --init`
+
+```bash
+npx eslint --init
+You can also run this command directly using 'npm init @eslint/config'.
+Need to install the following packages:
+  @eslint/create-config@0.4.1
+Ok to proceed? (y) y
+✔ How would you like to use ESLint? · problems
+✔ What type of modules does your project use? · esm
+✔ Which framework does your project use? · react
+✔ Does your project use TypeScript? · No / Yes
+✔ Where does your code run? · browser
+✔ What format do you want your config file to be in? · JavaScript
+The config that selected requires the following dependencies:
+
+eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest
+✔ Would you like to install them now? · No / Yes
+✔ Which package manager do you want to use? · npm
+```
+
+3. Instar plugin de [airbnb javascript style guide](https://airbnb.io/javascript/react/)
+
+```bash
+npx install-peerdeps --dev eslint-config-airbnb
+```
+
+4. Instalar dependencias de airbnb con eslint para TypeScript.
+
+```bash
+npm install --save-dev eslint-config-airbnb-typescript
+```
+
+5. Instalar [prettier](https://prettier.io) con soporte para eslint
+
+```bash
+npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+```
 
 ---
 

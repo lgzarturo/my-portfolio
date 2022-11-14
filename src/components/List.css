@@ -1,3 +1,4 @@
 h2 {
-  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
 }

@@ -1,24 +1,25 @@
 interface ListPropertiesState {
-  items: Array<Item>
+  items: Array<Item>;
 }
 
 interface Item {
-  field: any
-  value: any
+  id: string | number;
+  field: string | JSX.Element;
+  value: string | JSX.Element;
 }
 
 function ListProperties(props: ListPropertiesState) {
-  const { items } = props
+  const { items } = props;
   return (
     <ul>
       {items.map((item) => (
-        <li key={item.field}>
+        <li key={item.id}>
           <span>{item.field}</span>
           {item.value}
         </li>
       ))}
     </ul>
-  )
+  );
 }
 
-export default ListProperties
+export default ListProperties;
