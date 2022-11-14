@@ -1,10 +1,10 @@
 # Portafolio profesional
 
+El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com), forma parte de mi perfil profesional como desarrollador fullstack.
+
 ## Vite
 
 > El proyecto se migro a Vite + React + TypeScript Setup
-
-El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com)
 
 ### Dependencias
 
@@ -28,15 +28,14 @@ El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com)
 
 ## Ejecutar el proyecto
 
-> Para clonar el proyecto: `git clone git@github.com:lgzarturo/my-portfolio.git`
-> Se puede hacer un fork del proyecto para hacer uso del código o ejecutarlo de forma local.
+> Para clonar el proyecto: `git clone git@github.com:lgzarturo/my-portfolio.git`, se puede hacer un fork del proyecto para hacer uso del código o ejecutarlo de forma local.
 
 1. Primero es necesario hacer un clone del repositorio.
 2. Con `cd {carpeta}` se accede al proyecto.
 3. Ahora solo es necesario ejecutar el comando: `npm install`, para descargar todas las dependencias.
 4. Para correr el proyecto usar el siguiente comando: `npm run dev`
 
-### Comandos disponibles:
+### Comandos disponibles
 
 - `npm run dev`: Ejecutar el proyecto de forma local.
 - `npm run build`: Compilar el proyecto para generar el paquete optimizado para el despliegue.
@@ -44,15 +43,15 @@ El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com)
 
 ## Linter para Vite y TypeScript
 
-> El proyecto incluye: eslint, eslint-airbnb-config, prettier, vitest, jsdom, @testing-library y react-router.
+> El proyecto incluye: eslint, eslint-airbnb-config, prettier
 
-1. Instalar el Linter.
+1.- Instalar el Linter.
 
 ```bash
 npm install --save-dev --save-exact eslint
 ```
 
-2. Configurar eslint `npx eslint --init`
+2.- Configurar eslint `npx eslint --init`
 
 ```bash
 npx eslint --init
@@ -73,31 +72,32 @@ eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-e
 ✔ Which package manager do you want to use? · npm
 ```
 
-3. Instar plugin de [airbnb javascript style guide](https://airbnb.io/javascript/react/)
+3.- Instar plugin de [airbnb javascript style guide](https://airbnb.io/javascript/react/)
 
 ```bash
 npx install-peerdeps --dev eslint-config-airbnb
 ```
 
-4. Instalar dependencias de airbnb con eslint para TypeScript.
+4.- Instalar dependencias de airbnb con eslint para TypeScript.
 
 ```bash
 npm install --save-dev eslint-config-airbnb-typescript
 ```
 
-5. Instalar [prettier](https://prettier.io) con soporte para eslint
+5.- Instalar [prettier](https://prettier.io) con soporte para eslint
 
 ```bash
 npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
----
+> Commit [1557ae8](https://github.com/lgzarturo/my-portfolio/commit/1557ae838e54127973ad8570d6400e32bacd4314) con los cambios necesarios para configurar el linter y prettier.
 
 ## Proyecto de react desde Cero
 
 Para generar un proyecto con React y Webpack, se pueden requieren las siguientes dependencias.
 
 ### Instalar React
+
 ```bash
 npm init -y
 npm install --save-dev --save-exact webpack webpack-cli
