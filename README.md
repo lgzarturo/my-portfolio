@@ -100,6 +100,15 @@ npm install --save-dev vitest
 npm install --save-dev @testing-library/react @testing-library/jest-dom
 ```
 
+> Commit [c4cd711](https://github.com/lgzarturo/my-portfolio/commit/c4cd711dc31515697257ceaeee428c6333865ffd) donde se define la configuración del entorno de pruebas.
+
+## Mocking de fetch
+
+```bash
+npm install --save-dev cross-fetch
+npm install --save-dev msw
+```
+
 ## Uso de API's
 
 - Dev.to public api [https://dev.to/api/articles?username=lgzarturo](https://dev.to/api/articles?username=lgzarturo)
@@ -115,7 +124,10 @@ Para generar un proyecto con React y Webpack, se pueden requieren las siguientes
 npm init -y
 npm install --save-dev --save-exact webpack webpack-cli
 npm install --save-exact react react-dom
+npm install react-router-dom@6
 ```
+
+> Ver la configuración del archivo `setupTests.ts`
 
 ### Integrando Babel
 

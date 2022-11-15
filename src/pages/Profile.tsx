@@ -63,7 +63,7 @@ function Profile(props: UsernameProps) {
 
   return (
     <div className="profile-container">
-      <h2 className="display-4 mt-5 mb-3">Sobre mí</h2>
+      <h3 className="display-4 mt-5 mb-3">Sobre mí</h3>
       {loading ? (
         <span>Loading ...</span>
       ) : (

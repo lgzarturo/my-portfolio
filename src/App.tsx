@@ -8,8 +8,9 @@ import Project from './pages/Project';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NotFound from './pages/NotFound';
 
-function App() {
+export function App() {
   return (
     <div className="container">
       <nav className="navbar sticky-top navbar-light bg-dark">
@@ -17,17 +18,16 @@ function App() {
         <span className="d-flex text-light px-3">Perfil profesional</span>
       </nav>
 
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Profile username="lgzarturo" />} />
-          <Route path="/projects" element={<Projects username="lgzarturo" />} />
-          <Route
-            path="/projects/:name"
-            element={<Project username="lgzarturo" />}
-          />
-        </Routes>
-      </BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Profile username="lgzarturo" />} />
+        <Route path="/projects" element={<Projects username="lgzarturo" />} />
+        <Route
+          path="/projects/:name"
+          element={<Project username="lgzarturo" />}
+        />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
 
       <List />
       <Footer />
@@ -35,4 +35,10 @@ function App() {
   );
 }
 
-export default App;
+export function WrappedApp() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
