@@ -18,7 +18,7 @@ El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com), f
 "react-dom": "^18.2.0",
 ```
 
-## Estructura del proyecto
+### Estructura del proyecto
 
 - dist: Es la carpeta donde se genera el código optimizado para el despliegue.
 - src: Es la carpeta raíz del proyecto, aquí vive el código fuente.
@@ -26,7 +26,7 @@ El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com), f
   - components: Aquí se definen los componentes.
     - pages: Para el router de React se usa está carpeta para las páginas de la aplicación.
 
-## Ejecutar el proyecto
+### Ejecutar el proyecto
 
 > Para clonar el proyecto: `git clone git@github.com:lgzarturo/my-portfolio.git`, se puede hacer un fork del proyecto para hacer uso del código o ejecutarlo de forma local.
 
@@ -91,6 +91,18 @@ npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 > Commit [1557ae8](https://github.com/lgzarturo/my-portfolio/commit/1557ae838e54127973ad8570d6400e32bacd4314) con los cambios necesarios para configurar el linter y prettier.
+
+## Instalar entorno de pruebas con Vitest
+
+```bash
+npm install --save-dev vitest
+npm install --save-dev @testing-library/react @testing-library/jest-dom
+```
+
+## Uso de API's
+
+- Dev.to public api [https://dev.to/api/articles?username=lgzarturo](https://dev.to/api/articles?username=lgzarturo)
+- GitHub API [https://api.github.com/users/lgzarturo](https://api.github.com/users/lgzarturo)
 
 ## Proyecto de react desde Cero
 
