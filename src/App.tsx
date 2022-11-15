@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import List from './components/List';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Profile from './components/pages/Profile';
-import Projects from './components/pages/Projects';
-import Project from './components/pages/Project';
+import Profile from './pages/Profile';
+import Projects from './pages/Projects';
+import Project from './pages/Project';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'bootstrap/dist/css/bootstrap.min.css';

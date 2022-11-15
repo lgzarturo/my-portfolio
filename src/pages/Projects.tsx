@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import './Projects.css';
-import ListProperties from '../ListProperties';
-import Link from '../Link';
+import ListProperties from '../components/ListProperties';
+import Link from '../components/Link';
 
 interface UsernameProps {
   username: string;

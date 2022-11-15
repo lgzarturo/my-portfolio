@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom';
-import useFetch from '../../hooks/useFetch';
+import useFetch from '../hooks/useFetch';
 import './Project.css';
 
 interface UsernameProps {
   username: string;
 }
 
-function Project(props: UsernameProps) {
+function Project(props: UsernameProps): JSX.Element {
   const { username } = props;
   const { name } = useParams();
   const { data: project, loading } = useFetch(
@@ -26,6 +26,8 @@ function Project(props: UsernameProps) {
       </div>
     );
   }
+
+  return <>&nbsp;</>;
 }
 
 export default Project;

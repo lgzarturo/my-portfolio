@@ -24,7 +24,8 @@ El proyecto esta desplegado en [https://lgzarturo.com](https://lgzarturo.com), f
 - src: Es la carpeta raíz del proyecto, aquí vive el código fuente.
   - assets: En está carpeta se ponen los recursos estáticos de la aplicación.
   - components: Aquí se definen los componentes.
-    - pages: Para el router de React se usa está carpeta para las páginas de la aplicación.
+  - hooks: Se definen los `custom hooks` para la aplicación.
+  - pages: Para el router de React se usa está carpeta para las páginas de la aplicación.
 
 ### Ejecutar el proyecto
 

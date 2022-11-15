@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import Link from '../Link';
+import Link from '../components/Link';
 import './Profile.css';
-import ListProperties from '../ListProperties';
+import ListProperties from '../components/ListProperties';
 
 interface UsernameProps {
   username: string;
